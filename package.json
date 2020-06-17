@@ -1,6 +1,6 @@
 {
 	"name": "@khda/grpc",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "gRPC library for loopback4",
 	"keywords": [
 		"node.js",
@@ -9,10 +9,7 @@
 		"loopback"
 	],
 	"license": "ISC",
-	"author": {
-		"name": "KHDA"
-	},
-	"bundleDependencies": false,
+	"author": "KHDA",
 	"contributors": [],
 	"main": "index.js",
 	"scripts": {
@@ -24,7 +21,6 @@
 		"lint": "npm run prettier:check && npm run eslint",
 		"lint:fix": "npm run prettier:fix && npm run eslint:fix",
 		"posttest": "npm run lint",
-		"prepublishOnly": "npm run build",
 		"pretest": "npm run lint:fix && npm run clean && npm run build",
 		"prettier:check": "npm run prettier:cli -- -l",
 		"prettier:cli": "lb-prettier \"**/*.ts\"",
@@ -73,5 +69,13 @@
 		"tslint": "^6.1.0",
 		"tslint-config-prettier": "^1.18.0",
 		"typescript": "^3.8.3"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DmitryKhlebest/-khda-grpc.git"
+	},
+	"bugs": {
+		"url": "https://github.com/DmitryKhlebest/-khda-grpc/issues"
+	},
+	"homepage": "https://github.com/DmitryKhlebest/-khda-grpc#readme"
 }
