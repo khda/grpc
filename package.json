@@ -1,6 +1,6 @@
 {
 	"name": "@khda/grpc",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "gRPC library for loopback4",
 	"keywords": [
 		"node.js",
@@ -36,6 +36,7 @@
 		"@loopback/metadata": "^1.2.10",
 		"@loopback/repository": "^1.12.0",
 		"@loopback/rest": "^1.17.0",
+		"@mean-expert/protoc-ts": "0.0.2",
 		"debug": "^4.1.1",
 		"glob": "^7.1.6",
 		"grpc": "^1.23.3",
