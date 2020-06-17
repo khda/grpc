@@ -6,6 +6,7 @@
 import {inject} from '@loopback/context';
 import {ServerUnaryCall} from 'grpc';
 import {GrpcBindings} from './keys';
+import * as utils from './utils';
 
 import debugFactory from 'debug';
 const debug = debugFactory('loopback:grpc');
@@ -39,7 +40,9 @@ export class GrpcSequence implements GrpcSequenceInterface {
       this.method,
       call.request,
     );
-    const reply = await this.controller[this.method](call.request);
+    const reply = utils.serialize(
+      await this.controller[this.method](utils.deserialize(call.request))
+    );
     // Do something after call
     return reply;
   }

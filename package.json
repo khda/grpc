@@ -1,6 +1,6 @@
 {
 	"name": "@khda/grpc",
-	"version": "0.1.2",
+	"version": "0.2.0",
 	"description": "gRPC library for loopback4",
 	"keywords": [
 		"node.js",
